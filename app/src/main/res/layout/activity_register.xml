@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/bg_layout">
+
+
+    <TextView
+        android:id="@+id/title_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/title_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Would you like to joins us?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/title_2"/>
+
+    <ImageView
+        android:id="@+id/logo_2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/join"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title_3"/>
+
+    <EditText
+        android:id="@+id/str_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tex_top"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="Username"
+        android:layout_below="@id/logo_2"/>
+    <EditText
+        android:id="@+id/str_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tex_middle"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="0.5dp"
+        android:hint="Email"
+        android:layout_below="@id/str_username"/>
+    <EditText
+        android:id="@+id/str_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tex_middle"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="0.5dp"
+        android:hint="Email"
+        android:layout_below="@id/str_email"/>
+    <EditText
+        android:id="@+id/str_country"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tex_bottom"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/str_password"
+        android:layout_marginTop="0.5dp"
+        android:text="Choose Country"/>
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_below="@id/str_country"
+        android:text="SIGN UP"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/text_question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALREADY HAVE AN ACCOUNT ? SIGN IN"
+        android:layout_below="@id/btn_signup"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

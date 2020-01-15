@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_layout">
+
+    <TextView
+        android:id="@+id/title_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/title_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Would you like to joins us?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/title_l"/>
+
+    <ImageView
+        android:id="@+id/logo_l"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title_4"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/str_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tex_top"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Username"
+        android:layout_below="@id/logo_l"/>
+    <EditText
+        android:id="@+id/str_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tex_bottom"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/str_username"
+        android:layout_marginTop="0.5dp"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_below="@id/str_password"
+        android:text="SIGN IN"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/text_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DONT HAVE ACCOUNT ? SIGN UP"
+        android:layout_below="@id/btn_login"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>
